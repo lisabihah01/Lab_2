@@ -31,29 +31,36 @@
 
         <!-- Country -->
         <label for="country">Country of Residence:</label><br>
-        <input type="text" id="country" name="country" required><br><br>
+        <select id="country" name="country">
+            <option value="malaysia" selected>Malaysia</option>
+            <option value="singapore">Singapore</option>
+            <option value="indonesia">Indonesia</option>
+            <option value="thailand">Thailand</option>
+            <option value="philippines">Philippines</option>
+          </select><br><br>
 
         <!-- Areas of Interest -->
         <label for="interest">Areas of Interest:</label><br>
-        <input type="checkbox" id="ai" name="interest" value="AI">
-        <label for="ai">AI</label><br>
-        <input type="checkbox" id="ml" name="interest" value="Machine Learning">
-        <label for="ml">Machine Learning</label><br>
-        <input type="checkbox" id="data" name="interest" value="Data Science">
-        <label for="data">Data Science</label><br><br>
+           <input type="radio" id="ai" name="interest" value="AI" required>
+           <label for="ai">AI</label><br>
+           <input type="radio" id="ml" name="interest" value="Machine Learning">
+           <label for="ml">Machine Learning</label><br>
+           <input type="radio" id="data" name="interest" value="Data Science">
+           <label for="data">Data Science</label><br><br>
+
 
         <!-- Experience Level -->
-        <label for="experience">Experience Level:</label><br>
-        <select id="experience" name="experience" required>
-            <option value="">Select Experience Level</option>
-            <option value="beginner">Beginner</option>
-            <option value="intermediate">Intermediate</option>
-            <option value="expert">Expert</option>
-        </select><br><br>
+        <label>Experience Level:</label><br>
+            <input type="radio" id="beginner" name="experience" value="beginner" required>
+            <label for="beginner">Beginner</label><br>
+            <input type="radio" id="intermediate" name="experience" value="intermediate">
+            <label for="intermediate">Intermediate</label><br>
+            <input type="radio" id="expert" name="experience" value="expert">
+            <label for="expert">Expert</label><br><br>
 
         <!-- Comments -->
         <label for="comments">Comments or Questions:</label><br>
-        <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+        <textarea id="comments" name="comments" rows="4" cols="50"> Any comments or questions?</textarea><br><br>
 
         <!-- Buttons -->
         <button type="submit">Register</button>
